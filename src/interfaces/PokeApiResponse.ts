@@ -1,4 +1,4 @@
-export interface PokeAPIResponse {
+export interface PokeApiResponse {
     count:    number;
     next:     string;
     previous: null;
