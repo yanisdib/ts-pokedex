@@ -6,7 +6,7 @@ import { fetchPokemonSpeciesByUrl } from './pokemon-species';
 import { Generation, PokemonSpecy } from '../../interfaces/Generation';
 import { PokemonSpecies } from '../../interfaces/PokemonSpecies';
 import { Pokemon } from '../../interfaces/Pokemon';
-import { PokeAPIResponse } from '../../interfaces/PokeapiResponse';
+import { PokeApiResponse } from '../../interfaces/PokeApiResponse';
 
 
 const ROOT_URL = process.env.REACT_APP_API_URL;
@@ -14,7 +14,7 @@ const ROOT_URL = process.env.REACT_APP_API_URL;
 export const fetchGeneration = async (): Promise<Generation[]> => {
     try {
         const url = `${ROOT_URL}generation`;
-        const response: AxiosResponse<PokeAPIResponse> = await axios.get(url);
+        const response: AxiosResponse<PokeApiResponse> = await axios.get(url);
         const generationList: Generation[] = await Promise.all(
             response.data?.results
                 .map(generation => fetchGenerationByName(generation.name))
