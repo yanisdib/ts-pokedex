@@ -1,6 +1,6 @@
 import { ActionReducerMapBuilder, createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { isFailedAction } from '../../../helpers/action-handler';
+import { isFailedAction } from '../../../helpers/utils/action-handler';
 
 import { Generation } from '../../../interfaces/Generation';
 import { StoreState } from '../../../interfaces/StoreState';

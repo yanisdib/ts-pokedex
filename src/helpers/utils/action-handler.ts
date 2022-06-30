@@ -1,6 +1,6 @@
 import { AnyAction } from '@reduxjs/toolkit';
 
-import { FailedAction } from '../interfaces/FailedAction';
+import { FailedAction } from '../../interfaces/FailedAction';
 
 
 /**
