@@ -1,8 +1,8 @@
-import { Spinner } from '../';
+import { Spinner } from '..';
 
 import {
-    StyledLoading,
     Content,
+    StyledLoading,
     Wrapper
 } from './Loading.styled';
 
