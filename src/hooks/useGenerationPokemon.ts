@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux';
 
 import { Generation } from '../interfaces/Generation';
 import { StoreState } from '../interfaces/StoreState';
