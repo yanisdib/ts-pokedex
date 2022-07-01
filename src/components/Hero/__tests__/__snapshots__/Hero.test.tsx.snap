@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero component should render without crashing 1`] = `
+<div>
+  <section
+    class="sc-iBkjds fSmdMU"
+  >
+    <div
+      class="sc-ftvSup AwCYN"
+    >
+      <div
+        class="sc-papXJ eILoLV"
+      >
+        <h1>
+          Pokémon
+        </h1>
+      </div>
+      <button
+        class="sc-kDDrLX jDhDEP"
+      >
+        Press start
+      </button>
+      <div
+        class="sc-jqUVSM fYlZOm"
+      >
+        <span
+          class="sc-gKXOVf iRSPxX"
+        />
+        <h2>
+          ポケットモンスター Pokédex ® 1995
+        </h2>
+      </div>
+    </div>
+  </section>
+</div>
+`;
