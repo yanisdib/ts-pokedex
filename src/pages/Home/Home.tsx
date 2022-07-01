@@ -1,5 +1,14 @@
+import React from 'react';
+
+import { Hero } from '../../components';
+
+
 function Home(): JSX.Element {
-    return <div></div>;
+    return (
+        <React.Fragment>
+            <Hero />
+        </React.Fragment>
+    );
 }
 
 
