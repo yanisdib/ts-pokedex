@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressBar component should render without crashing 1`] = `
+<div>
+  <div
+    class="sc-bczRLJ gxJOsm"
+  />
+  <span
+    class="sc-gsnTZi kGfZrx"
+  >
+    0%
+  </span>
+</div>
+`;
