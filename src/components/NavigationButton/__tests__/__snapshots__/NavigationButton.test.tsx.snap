@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationButton component should render without crashing 1`] = `
+<div>
+  <span
+    class="sc-bczRLJ jXCQsR"
+  >
+    <svg
+      aria-hidden="true"
+      class="StyledIconBase-ea9ulj-0 lbJwfL"
+      fill="none"
+      focusable="false"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="m9 5 7 7-7 7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+      />
+    </svg>
+  </span>
+</div>
+`;
