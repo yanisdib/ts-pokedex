@@ -40,8 +40,8 @@ export default createGlobalStyle<{ theme: DefaultTheme }>`
         --ui-media-breakpoints-xl: 1440px;
 
         /** GUTTERS */
-        --ui-padding-x: 20px;
-        --ui-padding-y: 20px;
+        --ui-gutter-x: 20px;
+        --ui-gutter-y: 20px;
 
         /** LINE HEIGHTS */
         --ui-title-lh-xs: 1.2em; 
