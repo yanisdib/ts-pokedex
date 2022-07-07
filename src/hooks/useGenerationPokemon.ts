@@ -13,7 +13,7 @@ export const useGenerationPokemon = (): StoreState<Generation[]> => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(fetchGenerationRequest())
+        dispatch(fetchGenerationRequest());
     }, []);
 
     return useAppSelector(state => state.generation);

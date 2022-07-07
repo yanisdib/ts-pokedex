@@ -16,7 +16,7 @@ export const useDarkMode = (
     const [isEnabled, setIsEnabled] = useState(initialValue ?? false);
 
     const handleToggleMode = () => {
-        setIsEnabled(previousState => !previousState)
+        setIsEnabled(previousState => !previousState);
     };
 
     return [isEnabled, handleToggleMode];
