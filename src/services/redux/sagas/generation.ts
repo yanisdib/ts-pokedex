@@ -1,7 +1,9 @@
 import { call, put, takeLeading } from '@redux-saga/core/effects';
 
 import { Generation } from '../../../interfaces/Generation';
+
 import { fetchGeneration } from '../../api/generation';
+
 import { fetchGenerationRequest, fetchGenerationSuccess } from '../slices/generation';
 
 
