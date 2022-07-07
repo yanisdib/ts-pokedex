@@ -11,7 +11,7 @@ describe('Tag component', () => {
     });
 
     test('should render with default background color', () => {
-        const {getByTestId} = render(<Tag data-testid="tag-test" />);
+        const { getByTestId } = render(<Tag data-testid="tag-test" />);
 
         expect(getByTestId('tag-test')).toHaveStyle('background-color: #A8A8A8')
     });
