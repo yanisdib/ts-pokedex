@@ -23,7 +23,7 @@ function GenerationSection({ generation }: Props): JSX.Element {
         <Section>
             <Wrapper>
                 <Content>
-                    <Illustration>
+                    <Illustration loaded={isBannerLoaded}>
                         {/** Dummy data until logic is implemented */}
                         <img
                             alt="Illustration by Nintendo that shows a few Pokémon from the first generation like Pikachu, Pidgey, Rattata and their trainers"
