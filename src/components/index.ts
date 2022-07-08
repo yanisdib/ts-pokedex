@@ -8,6 +8,7 @@ export { default as Spinner } from './Spinner/Spinner';
 export { default as Tag } from './Tag/Tag';
 
 export { default as Hero } from './Hero/Hero';
+export { default as GenerationSection } from './GenerationSection/GenerationSection';
 export { default as PokemonPreview } from './PokemonPreview/PokemonPreview';
 export { default as PokemonSlider } from './PokemonSlider/PokemonSlider';
 
