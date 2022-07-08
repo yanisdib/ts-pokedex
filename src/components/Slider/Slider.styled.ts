@@ -37,3 +37,11 @@ export const Content = styled.div`
     transition-timing-function: cubic-bezier(0.15, 0, 0, 1);
     will-change: transform;
 `;
+
+
+export const Navigation = styled.div`
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+`;
