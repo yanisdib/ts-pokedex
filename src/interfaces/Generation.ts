@@ -1,24 +1,26 @@
 export interface Generation {
-    abilities:       any[];
-    id:              number;
-    main_region:     MainRegion;
-    moves:           any[];
-    name:            string;
-    names:           Name[];
+    abilities: any[];
+    id: number;
+    main_region: MainRegion;
+    moves: any[];
+    name: string;
+    names: Name[];
     pokemon_species: PokemonSpecy[];
-    types:           PokemonSpecy[];
-    version_groups:  PokemonSpecy[];
+    types: PokemonSpecy[];
+    version_groups: PokemonSpecy[];
 }
 
 export interface MainRegion {
+    name: string;
+    url: string;
 }
 
 export interface Name {
     language: PokemonSpecy;
-    name:     string;
+    name: string;
 }
 
 export interface PokemonSpecy {
     name: string;
-    url:  string;
+    url: string;
 }
