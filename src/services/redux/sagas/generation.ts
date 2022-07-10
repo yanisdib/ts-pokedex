@@ -1,16 +1,21 @@
-import { call, put, takeLeading } from '@redux-saga/core/effects';
+import { call, put, takeLatest } from '@redux-saga/core/effects';
+import { PayloadAction } from '@reduxjs/toolkit';
 
 import { Generation } from '../../../interfaces/Generation';
 
-import { fetchGeneration } from '../../api/generation';
+import { fetchGenerationById } from '../../api/generation';
 
 import { fetchGenerationRequest, fetchGenerationSuccess } from '../slices/generation';
 
 
-export function* fetchGenerationSaga() {
+interface FetchGenerationPayload {
+    id: number;
+}
+
+export function* fetchGenerationSaga({ payload }: PayloadAction<FetchGenerationPayload>) {
     try {
-        const generationList: Generation[] = yield call(fetchGeneration);
-        yield put(fetchGenerationSuccess(generationList));
+        const generation: Generation = yield call(fetchGenerationById, payload.id);
+        yield put(fetchGenerationSuccess(generation));
     } catch {
         const error: Error = new Error('Something went wrong.');
         yield put({ type: 'generation/fetchGenerationFailure', error });
@@ -18,5 +23,5 @@ export function* fetchGenerationSaga() {
 }
 
 export function* generationSaga() {
-    yield takeLeading(fetchGenerationRequest, fetchGenerationSaga);
+    yield takeLatest(fetchGenerationRequest, fetchGenerationSaga);
 }
