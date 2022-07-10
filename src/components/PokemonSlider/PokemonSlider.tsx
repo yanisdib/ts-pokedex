@@ -5,6 +5,7 @@ import { Pokemon } from '../../interfaces/Pokemon';
 import { Card, PokemonPreview, Slider } from '..';
 
 import { StyledPokemonSlider, Wrapper } from './PokemonSlider.styled';
+import { getPokemonTypeColor } from '../../helpers/utils/colors';
 
 
 interface Props {
@@ -19,7 +20,7 @@ function PokemonSlider({ pokemon }: Props): JSX.Element {
                 <Slider>
                     {pokemon
                         .map(element => (
-                            <Card>
+                            <Card cardColor={getPokemonTypeColor(element.types[0].type.name)}>
                                 <PokemonPreview key={uuidv4()} pokemon={element} />
                             </Card>
                         ))
