@@ -40,6 +40,7 @@ export const Wrapper = styled.div`
 
 export const Content = styled.div`
     display: flex;
+    flex-direction: column;
     row-gap: 20px;
     width: inherit;
     height: inherit;
