@@ -51,10 +51,10 @@ export const fetchGenerationByName = async (
 }
 
 export const fetchGenerationPokemon = async (
-    pokemon: PokemonSpecy[]
+    pokemonSpecyList: PokemonSpecy[]
 ): Promise<Pokemon[]> => {
     try {
-        const pokemonList: Pokemon[] = await Promise.all(pokemon
+        const pokemonList: Pokemon[] = await Promise.all(pokemonSpecyList
             .map(element => fetchPokemonByName(element.name))
         );
 
