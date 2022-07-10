@@ -6,23 +6,26 @@ import { Generation } from '../../../interfaces/Generation';
 import { StoreState } from '../../../interfaces/StoreState';
 
 
-interface GenerationState extends StoreState<Generation[]> { }
+interface GenerationState extends StoreState<Generation> { }
 
 
 const initialState: GenerationState = {
-    body: [],
+    body: {},
     error: null,
     status: 'idle'
 }
 
 const reducers = {
-    fetchGenerationRequest: (state: GenerationState) => ({
-        ...state,
-        status: 'pending'
-    }),
+    fetchGenerationRequest: {
+        reducer: (state: GenerationState) => ({
+            ...state,
+            status: 'pending'
+        }),
+        prepare: (id: number) => ({ payload: { id } })
+    },
     fetchGenerationSuccess: (
         state: GenerationState,
-        action: PayloadAction<Generation[]>
+        action: PayloadAction<Generation>
     ) => ({
         ...state,
         body: action.payload,
