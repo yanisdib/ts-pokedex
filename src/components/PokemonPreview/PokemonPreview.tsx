@@ -25,7 +25,7 @@ function PokemonPreview({ pokemon }: Props): JSX.Element {
     return (
         <>
             <PokemonIdentity>
-                <Tag>{id}</Tag>
+                <Tag backgroundColor={getPokemonTypeColor(types[0].type.name)}>{id}</Tag>
                 <h5>{toPascalCase(name)}</h5>
             </PokemonIdentity>
             <PokemonIllustation backgroundColor={pokemonTypeColor}>
