@@ -6,10 +6,10 @@ export const StyledLoading = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: auto;
     min-height: 404px;
     height: inherit;
-    background-color: var(--ui-theme-background);
+    background-color: transparent;
 `;
 
 export const Wrapper = styled.div`
