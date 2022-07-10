@@ -3,11 +3,12 @@ import styled from 'styled-components';
 
 export const PokemonIdentity = styled.div`
     display: flex;
-    column-gap: calc(var(--ui-gutter-x) - 10);
+    column-gap: calc(var(--ui-gutter-x) - 10px);
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: fit-content;
-    padding: calc(var(--ui-gutter-x) - 5) calc(var(--ui-gutter-y) * 2.5);
+    padding: calc(var(--ui-gutter-x) - 5px) calc(var(--ui-gutter-y) * 2.5);
 
     h5 {
         font-family: var(--info-font);
@@ -26,6 +27,7 @@ export const PokemonIllustation = styled.div`
     display: flex;
     justify-content: center;
     align-self: center;
+    width: 50%;
     background-image: ${({
         backgroundColor
     }: PokemonIllustrationProps) => `radial-gradient(
