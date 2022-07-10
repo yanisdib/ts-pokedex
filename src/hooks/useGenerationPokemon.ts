@@ -1,20 +1,21 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 
-import { Generation } from '../interfaces/Generation';
+import { PokemonSpecy } from '../interfaces/Generation';
+import { Pokemon } from '../interfaces/Pokemon';
 import { StoreState } from '../interfaces/StoreState';
 
-import { fetchGenerationRequest } from '../services/redux/slices/generation';
+import { fetchGenerationPokemonRequest } from '../services/redux/slices/generationPokemon';
 
 import { useAppSelector } from './useAppSelector';
 
 
-export const useGenerationPokemon = (): StoreState<Generation[]> => {
+export const useGenerationPokemon = (specyList: PokemonSpecy[]): StoreState<Pokemon[]> => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(fetchGenerationRequest());
-    }, []);
+        dispatch(fetchGenerationPokemonRequest(specyList));
+    }, [dispatch, specyList]);
 
-    return useAppSelector(state => state.generation);
+    return useAppSelector(state => state.generationPokemon);
 }
